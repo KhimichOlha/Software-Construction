@@ -5,9 +5,31 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab-1", "Lab-1", "{DA8F4E75-67EC-4266-A7B1-D49C1A8C410C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Product.Logic", "Product.Logic\Product.Logic.csproj", "{B0ED96E4-AC52-4CEE-B785-E344081CD312}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Product.UI", "Product.UI\Product.UI.csproj", "{D8FD22FA-A401-4A61-AE8B-9CE2172B0997}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0ED96E4-AC52-4CEE-B785-E344081CD312}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0ED96E4-AC52-4CEE-B785-E344081CD312}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0ED96E4-AC52-4CEE-B785-E344081CD312}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0ED96E4-AC52-4CEE-B785-E344081CD312}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8FD22FA-A401-4A61-AE8B-9CE2172B0997}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8FD22FA-A401-4A61-AE8B-9CE2172B0997}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8FD22FA-A401-4A61-AE8B-9CE2172B0997}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8FD22FA-A401-4A61-AE8B-9CE2172B0997}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B0ED96E4-AC52-4CEE-B785-E344081CD312} = {DA8F4E75-67EC-4266-A7B1-D49C1A8C410C}
+		{D8FD22FA-A401-4A61-AE8B-9CE2172B0997} = {DA8F4E75-67EC-4266-A7B1-D49C1A8C410C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {55641937-2141-41F4-9135-13216110E202}
