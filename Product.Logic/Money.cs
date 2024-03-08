@@ -4,10 +4,19 @@
     {
         private int _whole;
         private int _fraction;
+
         public Money(int whole, int fraction)
         {
             _whole = whole;
             _fraction = fraction;
+        }
+        protected int GetWhole()
+        {
+            return _whole;
+        }
+        protected int GetFraction()
+        {
+            return _fraction;
         }
         public void SetWhole(int whole)
         {

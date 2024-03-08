@@ -9,13 +9,13 @@ namespace Product.Logic
     public class Warehouse
     {
         private List<Product> _products;
-        private DateOnly _lastdate;
 
-        public Warehouse(List<Product> products,DateOnly lastdate)
+        public Warehouse(List<Product> products)
         {
             _products = products;
-            _lastdate = lastdate;
+
         }
+        public List<Product> Products { get; set; }
 
     }
 }
