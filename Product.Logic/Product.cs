@@ -12,11 +12,12 @@ namespace Product.Logic
         private string _name;
         private Money _price;
         private string _unitOfMeasurement;
-        public Product (string name, Money price, DateOnly lastdate)
+        public Product (string name, Money price, DateOnly lastdate, string unitOfMeasurement)
         {
             _name = name;
             _price = price;
             _lastdate = lastdate;
+            _unitOfMeasurement = unitOfMeasurement;
         }
         public DateOnly DateImport { get { return _lastdate; } }
         public string Name { get { return _name; } }

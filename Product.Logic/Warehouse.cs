@@ -8,11 +8,13 @@ namespace Product.Logic
 {
     public class Warehouse
     {
-        private List<Product> _products;
 
-        public Warehouse(List<Product> products)
+        private readonly List<Product> _products;
+
+       
+        public Warehouse()
         {
-            _products = products;
+            _products = new List<Product>();
 
         }
         public List<Product> Products { get; set; }
