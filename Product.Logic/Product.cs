@@ -28,7 +28,12 @@ namespace Product.Logic
             _price = _price - money;
            
         }
-        
+        public override string ToString()
+        {
+            return $"{_name} ціна {_price} за {_unitOfMeasurement}";
+
+        }
+
     }
    
 }

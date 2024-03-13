@@ -17,7 +17,8 @@ namespace Product.Logic
             _products = new List<Product>();
 
         }
-        public List<Product> Products { get; set; }
+        public List<Product> Products { get { return _products; } }
+        
 
     }
 }

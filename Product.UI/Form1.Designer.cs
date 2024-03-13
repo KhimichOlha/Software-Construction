@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            tcAddProduct = new TabControl();
+            tcProduct = new TabControl();
             tabPage1 = new TabPage();
             btAddProduct = new Button();
             dtDate = new DateTimePicker();
@@ -48,7 +48,7 @@
             lbRegisterIncoming = new Label();
             tabPage5 = new TabPage();
             lbOutReport = new Label();
-            tcAddProduct.SuspendLayout();
+            tcProduct.SuspendLayout();
             tabPage1.SuspendLayout();
             tabPage2.SuspendLayout();
             tabPage3.SuspendLayout();
@@ -56,19 +56,20 @@
             tabPage5.SuspendLayout();
             SuspendLayout();
             // 
-            // tcAddProduct
+            // tcProduct
             // 
-            tcAddProduct.Controls.Add(tabPage1);
-            tcAddProduct.Controls.Add(tabPage2);
-            tcAddProduct.Controls.Add(tabPage3);
-            tcAddProduct.Controls.Add(tabPage4);
-            tcAddProduct.Controls.Add(tabPage5);
-            tcAddProduct.Dock = DockStyle.Fill;
-            tcAddProduct.Location = new Point(0, 0);
-            tcAddProduct.Name = "tcAddProduct";
-            tcAddProduct.SelectedIndex = 0;
-            tcAddProduct.Size = new Size(840, 511);
-            tcAddProduct.TabIndex = 0;
+            tcProduct.Controls.Add(tabPage1);
+            tcProduct.Controls.Add(tabPage2);
+            tcProduct.Controls.Add(tabPage3);
+            tcProduct.Controls.Add(tabPage4);
+            tcProduct.Controls.Add(tabPage5);
+            tcProduct.Dock = DockStyle.Fill;
+            tcProduct.Location = new Point(0, 0);
+            tcProduct.Name = "tcProduct";
+            tcProduct.SelectedIndex = 0;
+            tcProduct.Size = new Size(840, 511);
+            tcProduct.TabIndex = 0;
+            tcProduct.Click += tcProduct_Click;
             // 
             // tabPage1
             // 
@@ -88,7 +89,6 @@
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Add product";
             tabPage1.UseVisualStyleBackColor = true;
-            tabPage1.Click += tabPage1_Click;
             // 
             // btAddProduct
             // 
@@ -186,6 +186,7 @@
             btBuy.TabIndex = 1;
             btBuy.Text = "Купити";
             btBuy.UseVisualStyleBackColor = true;
+            btBuy.Click += btBuy_Click;
             // 
             // lvProducts
             // 
@@ -212,9 +213,8 @@
             lbSumReport.AutoSize = true;
             lbSumReport.Location = new Point(3, 1);
             lbSumReport.Name = "lbSumReport";
-            lbSumReport.Size = new Size(50, 20);
+            lbSumReport.Size = new Size(0, 20);
             lbSumReport.TabIndex = 0;
-            lbSumReport.Text = "label1";
             // 
             // tabPage4
             // 
@@ -232,9 +232,8 @@
             lbRegisterIncoming.AutoSize = true;
             lbRegisterIncoming.Location = new Point(2, 1);
             lbRegisterIncoming.Name = "lbRegisterIncoming";
-            lbRegisterIncoming.Size = new Size(50, 20);
+            lbRegisterIncoming.Size = new Size(0, 20);
             lbRegisterIncoming.TabIndex = 0;
-            lbRegisterIncoming.Text = "label1";
             // 
             // tabPage5
             // 
@@ -261,11 +260,10 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(840, 511);
-            Controls.Add(tcAddProduct);
+            Controls.Add(tcProduct);
             Name = "MainForm";
             Text = "Main";
-            Load += MainForm_Load;
-            tcAddProduct.ResumeLayout(false);
+            tcProduct.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
             tabPage1.PerformLayout();
             tabPage2.ResumeLayout(false);
@@ -280,7 +278,7 @@
 
         #endregion
 
-        private TabControl tcAddProduct;
+        private TabControl tcProduct;
         private TabPage tabPage1;
         private TabPage tabPage2;
         private TextBox tbunitOfMeasurement;

@@ -31,15 +31,29 @@ namespace Product.UI
             }
             ProductClass product = new ProductClass(tbNameProduct.Text, money, DateOnly.FromDateTime(dtDate.Value), tbunitOfMeasurement.Text);
             lbRegisterIncoming.Text += $"{_reporting.RegisterIncoming(product)}\n";
-        }
-
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
+            lvProducts.Items.Add(product.ToString());
 
         }
 
-        private void MainForm_Load(object sender, EventArgs e)
+
+        private void btBuy_Click(object sender, EventArgs e)
         {
+            if (lvProducts.SelectedItems.Count > 0)
+            {
+                foreach (ListViewItem items in lvProducts.SelectedItems)
+                {
+              
+                    string[] pars = items.Text.Split(" ");
+                    lbOutReport.Text += _reporting.ShipGoods(pars[0], 1);
+
+                }
+
+            }
+        }
+
+        private void tcProduct_Click(object sender, EventArgs e)
+        {
+            lbSumReport.Text = _reporting.GenerateInventoryReport();
 
         }
     }
