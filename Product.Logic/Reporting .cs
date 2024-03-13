@@ -34,8 +34,9 @@ namespace Product.Logic
             }
             else
             {
-                return $"Помилка: на складі недостатньо товару для відвантаження {quantity} одиниць товару: {productname}";
-
+                // return $"Помилка: на складі недостатньо товару для відвантаження {quantity} одиниць товару: {productname}";
+                //Fail Fast
+                throw new Exception($"Помилка: на складі недостатньо товару для відвантаження {quantity} одиниць товару: {productname}");
             }
 
         }

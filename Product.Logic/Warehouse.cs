@@ -9,7 +9,7 @@ namespace Product.Logic
     public class Warehouse
     {
 
-        private readonly List<Product> _products;
+        private readonly IList<Product> _products;
 
        
         public Warehouse()
@@ -17,7 +17,9 @@ namespace Product.Logic
             _products = new List<Product>();
 
         }
-        public List<Product> Products { get { return _products; } }
+
+        //Program to Interfaces not Implementations
+        public IList<Product> Products { get { return _products; } }
         
 
     }

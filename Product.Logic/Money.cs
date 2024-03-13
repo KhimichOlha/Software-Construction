@@ -36,13 +36,14 @@
             return new Money(difference/100, difference%100);
 
         }
+        //Open cloused
         public override string ToString()
         {
             return $"{_whole}.{_fraction}";
 
         }
 
-
+        //Модифікація класу обджект без зміни його функціоналу 
 
     }
    

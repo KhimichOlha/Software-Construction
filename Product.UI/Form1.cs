@@ -7,12 +7,14 @@ namespace Product.UI
 
     public partial class MainForm : Form
     {
-        private readonly Warehouse _warehouse;
+
         private readonly Reporting _reporting;
         public MainForm()
         {
-            _warehouse = new Warehouse();
-            _reporting = new Reporting(_warehouse);
+            IShop<Reporting> shop = new ShopReport();
+            //_warehouse = new Warehouse();
+            //Interface Segregation Principle
+            _reporting = shop.Get();
             InitializeComponent();
         }
 
@@ -26,7 +28,9 @@ namespace Product.UI
             {
                 if (int.TryParse(parts[0], out int whole) && int.TryParse(parts[1], out int fraction))
                 {
-                    money = new Logic.Money(whole, fraction);
+                    //Liskov Substitution
+                    money = new Dollar(whole, fraction);
+                    //money = new Logic.Money(whole, fraction);
                 }
             }
             ProductClass product = new ProductClass(tbNameProduct.Text, money, DateOnly.FromDateTime(dtDate.Value), tbunitOfMeasurement.Text);
