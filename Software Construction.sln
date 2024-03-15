@@ -5,9 +5,14 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab-1", "Lab-1", "{DA8F4E75-67EC-4266-A7B1-D49C1A8C410C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Product.Logic", "Product.Logic\Product.Logic.csproj", "{B0ED96E4-AC52-4CEE-B785-E344081CD312}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Product.Logic", "Product.Logic\Product.Logic.csproj", "{B0ED96E4-AC52-4CEE-B785-E344081CD312}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Product.UI", "Product.UI\Product.UI.csproj", "{D8FD22FA-A401-4A61-AE8B-9CE2172B0997}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Product.UI", "Product.UI\Product.UI.csproj", "{D8FD22FA-A401-4A61-AE8B-9CE2172B0997}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{683F6662-59D6-4BF7-B23A-6237E9AC19B4}"
+	ProjectSection(SolutionItems) = preProject
+		Resource\Product.drawio.pdf = Resource\Product.drawio.pdf
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
