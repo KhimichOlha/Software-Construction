@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DeviceFactoryLogic\DeviceFactoryLogic.csproj" />
     <ProjectReference Include="..\FactorySubscription\FactorySubscription.csproj" />
   </ItemGroup>
 

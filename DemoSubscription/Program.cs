@@ -1,10 +1,29 @@
-﻿using FactorySubscription;
+﻿using DeviceFactoryLogic;
+using FactorySubscription;
 
 namespace DemoSubscription
 {
     internal class Program
     {
         static void Main(string[] args)
+        {
+            DemoAbstractFactory();
+            DemoFactotyMethod();
+
+        }
+        static void DemoAbstractFactory() 
+        {
+            IDevice proneDevice = new Prone();
+            IDevice kiaomiDevice = new Kiaomi();
+            IDevice balaxyDevice = new Balaxy();
+            Console.WriteLine(proneDevice.CreateNetbook().Doing());
+            Console.WriteLine(kiaomiDevice.CreateSmartphone().Doing());
+            Console.WriteLine(balaxyDevice.CreateSmartphone().Doing());
+
+
+        }
+
+        static void DemoFactotyMethod()
         {
             CreatorSubscription creatorMobile = new MobileApp();
             ISubscription domesticSubscription = creatorMobile.CreateSubscription();
