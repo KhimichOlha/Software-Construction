@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace FactorySubscription
 {
-    internal class WebSite : CreatorSubscription
+    public class WebSite : CreatorSubscription
     {
         public override ISubscription CreateSubscription()
         {
-            throw new NotImplementedException();
+            return new EducationalSubscription();
         }
     }
 }
