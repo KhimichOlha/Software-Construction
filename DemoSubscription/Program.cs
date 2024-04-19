@@ -1,5 +1,7 @@
-﻿using DeviceFactoryLogic;
+﻿using AuthenticatorSingleton;
+using DeviceFactoryLogic;
 using FactorySubscription;
+using VirusPrototype;
 
 namespace DemoSubscription
 {
@@ -7,9 +9,39 @@ namespace DemoSubscription
     {
         static void Main(string[] args)
         {
-            DemoAbstractFactory();
-            DemoFactotyMethod();
+            //DemoAbstractFactory();
+            // DemoFactotyMethod();
+            //DemoAuthenticator();
+            DemoPrototype();
+        }
 
+        static void DemoPrototype()
+        {
+            Virus virus1 = new Virus(0.01, 3, "tomovirus", "Шкідник");
+            Virus virus2 = new Virus(0.01, 2, "delvirus", "Знищувач");
+            Virus virus3 = new Virus(0.01, 1, "applvirus", "Хробак");
+            Virus virus4 = new Virus(0.01, 1, "televirus", "Комбінований");
+            virus1.AddChild(virus2);
+            virus1.AddChild(virus3);
+            virus1.AddChild(virus4);
+            virus2.AddChild(virus3);
+            virus2.AddChild(virus4);
+            Virus clonvirus1 = (Virus) virus1.Clone();
+            Console.WriteLine("Cloned Virus Hierarchy:\n" + virus1.DisplayInfo());
+        }
+
+        static void DemoAuthenticator()
+        {
+            Authenticator authenticatorone = Authenticator.GetInstance();
+            Authenticator authenticatortwo = Authenticator.GetInstance();
+            if (authenticatorone != authenticatortwo)
+            {
+                Console.WriteLine("Це два різні обєкта");
+            }
+            else
+            {
+                Console.WriteLine("Це один обєкт");
+            }
         }
         static void DemoAbstractFactory() 
         {

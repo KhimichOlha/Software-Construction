@@ -18,11 +18,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lab-2", "lab-2", "{11AB4F67
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactorySubscription", "FactorySubscription\FactorySubscription.csproj", "{CDD0006A-735C-4DCA-AF51-72F5458E5DE9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoSubscription", "DemoSubscription\DemoSubscription.csproj", "{C7F8450A-7AC6-4EF4-A50F-2AE1B6563C4C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoSubscription", "DemoSubscription\DemoSubscription.csproj", "{C7F8450A-7AC6-4EF4-A50F-2AE1B6563C4C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeviceFactoryLogic", "DeviceFactoryLogic\DeviceFactoryLogic.csproj", "{6916C1F8-3937-4144-B961-E52F7F21C3C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeviceFactoryLogic", "DeviceFactoryLogic\DeviceFactoryLogic.csproj", "{6916C1F8-3937-4144-B961-E52F7F21C3C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthenticatorSingleton", "AuthenticatorSingleton\AuthenticatorSingleton.csproj", "{E44C16B4-470D-406F-9655-36460A50DB73}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthenticatorSingleton", "AuthenticatorSingleton\AuthenticatorSingleton.csproj", "{E44C16B4-470D-406F-9655-36460A50DB73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirusPrototype", "VirusPrototype\VirusPrototype.csproj", "{79623B78-8B93-4BF8-934A-C18ABF57F1B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -54,6 +56,10 @@ Global
 		{E44C16B4-470D-406F-9655-36460A50DB73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E44C16B4-470D-406F-9655-36460A50DB73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E44C16B4-470D-406F-9655-36460A50DB73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79623B78-8B93-4BF8-934A-C18ABF57F1B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79623B78-8B93-4BF8-934A-C18ABF57F1B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79623B78-8B93-4BF8-934A-C18ABF57F1B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79623B78-8B93-4BF8-934A-C18ABF57F1B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -65,6 +71,7 @@ Global
 		{C7F8450A-7AC6-4EF4-A50F-2AE1B6563C4C} = {11AB4F67-EB42-4AC2-83E7-EA80A6FFB727}
 		{6916C1F8-3937-4144-B961-E52F7F21C3C1} = {11AB4F67-EB42-4AC2-83E7-EA80A6FFB727}
 		{E44C16B4-470D-406F-9655-36460A50DB73} = {11AB4F67-EB42-4AC2-83E7-EA80A6FFB727}
+		{79623B78-8B93-4BF8-934A-C18ABF57F1B4} = {11AB4F67-EB42-4AC2-83E7-EA80A6FFB727}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {55641937-2141-41F4-9135-13216110E202}
