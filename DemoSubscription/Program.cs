@@ -1,4 +1,5 @@
 ﻿using AuthenticatorSingleton;
+using BuilderPerson;
 using DeviceFactoryLogic;
 using FactorySubscription;
 using VirusPrototype;
@@ -12,7 +13,18 @@ namespace DemoSubscription
             //DemoAbstractFactory();
             // DemoFactotyMethod();
             //DemoAuthenticator();
-            DemoPrototype();
+            //DemoPrototype();
+            DemoBuider();
+        }
+
+        static void DemoBuider()
+        {
+            HeroBuilder heroBuilder = new HeroBuilder();
+            CharacterDirector heroDirector = new CharacterDirector(heroBuilder);
+            Character hero = heroDirector.Constrat();
+
+            Console.WriteLine("Hero:"+ hero.GetInfo());
+            
         }
 
         static void DemoPrototype()

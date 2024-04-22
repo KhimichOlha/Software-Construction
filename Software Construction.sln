@@ -24,7 +24,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeviceFactoryLogic", "Devic
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthenticatorSingleton", "AuthenticatorSingleton\AuthenticatorSingleton.csproj", "{E44C16B4-470D-406F-9655-36460A50DB73}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirusPrototype", "VirusPrototype\VirusPrototype.csproj", "{79623B78-8B93-4BF8-934A-C18ABF57F1B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VirusPrototype", "VirusPrototype\VirusPrototype.csproj", "{79623B78-8B93-4BF8-934A-C18ABF57F1B4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuilderPerson", "BuilderPerson\BuilderPerson.csproj", "{DCD58C67-8DAD-4320-8E1F-85247B86EAB1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DiagramUML", "DiagramUML", "{772E68A2-56C2-4DCD-A00C-968A3AA1BE80}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Завдання лаб\Builder.png = ..\..\..\Завдання лаб\Builder.png
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -60,6 +67,10 @@ Global
 		{79623B78-8B93-4BF8-934A-C18ABF57F1B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79623B78-8B93-4BF8-934A-C18ABF57F1B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79623B78-8B93-4BF8-934A-C18ABF57F1B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCD58C67-8DAD-4320-8E1F-85247B86EAB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCD58C67-8DAD-4320-8E1F-85247B86EAB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCD58C67-8DAD-4320-8E1F-85247B86EAB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCD58C67-8DAD-4320-8E1F-85247B86EAB1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -72,6 +83,8 @@ Global
 		{6916C1F8-3937-4144-B961-E52F7F21C3C1} = {11AB4F67-EB42-4AC2-83E7-EA80A6FFB727}
 		{E44C16B4-470D-406F-9655-36460A50DB73} = {11AB4F67-EB42-4AC2-83E7-EA80A6FFB727}
 		{79623B78-8B93-4BF8-934A-C18ABF57F1B4} = {11AB4F67-EB42-4AC2-83E7-EA80A6FFB727}
+		{DCD58C67-8DAD-4320-8E1F-85247B86EAB1} = {11AB4F67-EB42-4AC2-83E7-EA80A6FFB727}
+		{772E68A2-56C2-4DCD-A00C-968A3AA1BE80} = {11AB4F67-EB42-4AC2-83E7-EA80A6FFB727}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {55641937-2141-41F4-9135-13216110E202}

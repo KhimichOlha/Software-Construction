@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AuthenticatorSingleton\AuthenticatorSingleton.csproj" />
+    <ProjectReference Include="..\BuilderPerson\BuilderPerson.csproj" />
     <ProjectReference Include="..\DeviceFactoryLogic\DeviceFactoryLogic.csproj" />
     <ProjectReference Include="..\FactorySubscription\FactorySubscription.csproj" />
     <ProjectReference Include="..\VirusPrototype\VirusPrototype.csproj" />
