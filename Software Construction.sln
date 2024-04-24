@@ -30,7 +30,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuilderPerson", "BuilderPer
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DiagramUML", "DiagramUML", "{772E68A2-56C2-4DCD-A00C-968A3AA1BE80}"
 	ProjectSection(SolutionItems) = preProject
+		..\..\..\Завдання лаб\AbstractFactory.png = ..\..\..\Завдання лаб\AbstractFactory.png
 		..\..\..\Завдання лаб\Builder.png = ..\..\..\Завдання лаб\Builder.png
+		..\..\..\Завдання лаб\FactoryMethod.png = ..\..\..\Завдання лаб\FactoryMethod.png
+		..\..\..\Завдання лаб\Prototype.png = ..\..\..\Завдання лаб\Prototype.png
+		..\..\..\Завдання лаб\Singleton.png = ..\..\..\Завдання лаб\Singleton.png
 	EndProjectSection
 EndProject
 Global
